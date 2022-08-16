@@ -11,5 +11,7 @@ jobs:
           dropbox-token: ${{ secrets.DROPBOX_TOKEN }}
           source-path: '/dotfiles/zk'
       - name: List artifacts
-        run: ls -la
+        run: |
+          ls -la
+          find artifacts
 
