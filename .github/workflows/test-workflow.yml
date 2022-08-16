@@ -9,8 +9,6 @@ jobs:
       - uses: gbrls/action-dropbox-download@main
         with:
           dropbox-token: ${{ secrets.DROPBOX_TOKEN }}
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: List artifacts
+        run: ls -la
 
