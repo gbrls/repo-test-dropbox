@@ -7,6 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: gbrls/action-dropbox-download@main
+        with:
+          dropbox-token: ${{ secrets.DROPBOX_TOKEN }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
