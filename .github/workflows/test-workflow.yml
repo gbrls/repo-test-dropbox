@@ -9,6 +9,7 @@ jobs:
       - uses: gbrls/action-dropbox-download@main
         with:
           dropbox-token: ${{ secrets.DROPBOX_TOKEN }}
+          source-path: '/dotfiles/zk'
       - name: List artifacts
         run: ls -la
 
