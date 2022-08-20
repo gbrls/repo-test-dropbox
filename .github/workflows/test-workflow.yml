@@ -10,6 +10,7 @@ jobs:
         with:
           dropbox-token: ${{ secrets.DROPBOX_TOKEN }}
           source-path: '/dotfiles/zk'
+          destination-path: 'downloaded'
       - name: List artifacts
         run: |
           ls -la
