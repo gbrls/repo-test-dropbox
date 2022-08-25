@@ -10,7 +10,7 @@ jobs:
         with:
           dropbox-refresh-token: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
           source-path: '/code'
-          destination-path: 'downloaded'
+          destination-path: '/tmp/downloaded'
       - name: List artifacts
         run: |
           ls -la
